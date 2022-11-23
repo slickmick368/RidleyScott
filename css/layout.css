@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Noto+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+/*Menu Bar & Dropdown*/
+.navigation {
+    display: flex;
+    /* This tells the Browser that this container allows the nested elements to sit beside each other */
+    height: auto;
+    /* This tells the Browser to automatically resize to the height of what is inside the <div> */
+    background-color: darkslategray;
+
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    padding-bottom: 21px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    background-color: darkslategray;
+    min-width: 160px;
+    z-index: 12;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #9D7A6E;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    /* This removes the bullets from x§§the list items */
+    margin: 0 auto;
+    /*This resets the margins and placement to 0 */
+    padding: 20px;
+    /*This is giving space of 20px on all 4 sides - top, bottom, left and right*/
+}
+
+.navigation li {
+    font-family: 'Noto Sans KR', sans-serif;
+    /*This is setting the font to Noto Sans KR */
+    display: inline;
+    /*This changes the <li> from a block level element to an inline element */
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    /*This removes the underline from the <a> */
+    color: antiquewhite;
+    /*This is setting the colour of the text to a something else */
+    padding: 20px;
+    /*This is giving space of 20px on all 4 sides - top, bottom, left and right*/
+}
+
+/*Changes the colour of the selected menubar element*/
+.selected {
+    background-color: saddlebrown;
+}
+
+.contact-row {
+    display: flex;
+}
+
+.row {
+    margin: 0 auto;
+    display: flex;
+    width: auto;
+    margin-top: 2%;
+    justify-content: space-around;
+
+}
+
+.rowNarrow {
+    margin: 0 auto;
+    display: flex;
+    width: 80%;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.merch-categories {
+    display: flex;
+    width: auto;
+    margin-top: 20px;
+    padding-top: 20px;
+    justify-content: center;
+    background-color: #BF1304;
+}
+
+.col2 {
+    width: 40%;
+    margin-right: 2%
+}
+
+.col3 {
+    width: 33.33%;
+    margin: 0 auto;
+}
+
+.about_col3 {
+    width: 33.33%;
+    padding-left: 100px;
+}
+
+.about_colright {
+    width: 33.33%;
+    padding-right: 100px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 150%;
+    text-align: left;
+
+}
+
+.contact_content {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    padding-top: 80%;
+    text-align: center;
+}
+
+.contact-text {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    line-height: 150%;
+    text-align: left;
+
+}
+
+.contact_content ol li a {
+    position: relative;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+}
+
+/* Styling and formatting the back to top contact page button*/
+.myBtn {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: red;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+.myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: yellow;
+    margin-top: 10px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+}
+
+#instagram, #twitter {
+    padding-bottom: 3%;
+}
+
+/*Image Positioning and formatting*/
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Styling the Contact background*/
+.background {
+    position: inherit;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.bgimg {
+    position: fixed;
+    opacity: 0.2;
+    width: 100%;
+}
+
+.cast_pics {
+    min-height: 450px;
+    max-height: 450px;
+    width: auto;
+    border-radius: 10%
+}
+
+.pics {
+    min-width: 200px;
+    width: 100%;
+}
+
+/*Styling the images for the about page*/
+.about_1 {
+    min-width: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #006400;
+}
+
+.about_2 {
+    width: 100%;
+    border-radius: 20px;
+    border: 4px solid #006400;
+}
+
+.about_3 {
+    min-width: 200px;
+    width: 50%;
+    border-radius: 20px;
+    border: 4px solid #006400;
+}
+
+/*******************/
+
+.circular {
+    border-radius: 50%;
+}
+
+.email {
+    position: relative;
+    z-index: 10;
+    width: 27.5%;
+}
+
+.instagram {
+    position: relative;
+    z-index: 10;
+    width: 20%;
+}
+
+.twitter {
+    position: relative;
+    z-index: 10;
+    width: 25%;
+}
+
+/*Applying a zoom effect on film and tv poster images*/
+#zoom {
+    display: block;
+    transition: transform .2s;
+    transition: ease .5s;
+    /* Animation */
+}
+
+#zoom:hover {
+    transform: scale(1.075);
+    opacity: 0.5;
+}
+
+/*Positioning embedded content*/
+.embed-box {
+    margin: auto;
+    width: 50%;
+    position: relative;
+    z-index: 11;
+    /*Keeping embed on top of background image*/
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay h2 {
+    position: absolute;
+    bottom: 0;
+    /* Black see-through */
+    color: white;
+    width: 100%;
+    height: 50%;
+    transition: .5s ease;
+    opacity: 0;
+    font-family:
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover h2{
+    opacity: 1;
+}
